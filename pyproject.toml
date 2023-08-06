@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "online-store"
+version = "0.1.0"
+description = ""
+authors = ["Deadmau5"]
+readme = "README.md"
+packages = [{include = "online_store"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
