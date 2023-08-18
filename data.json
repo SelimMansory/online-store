@@ -1,0 +1,52 @@
+[
+  {
+    "model": "catalog.student",
+    "pk": 1,
+    "fields": {
+      "first_name": "Селим",
+      "last_name": "Сеидов",
+      "avatar": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.student",
+    "pk": 2,
+    "fields": {
+      "first_name": "Пигам",
+      "last_name": "Непесов",
+      "avatar": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.student",
+    "pk": 3,
+    "fields": {
+      "first_name": "Салих",
+      "last_name": "Сеидов",
+      "avatar": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.student",
+    "pk": 4,
+    "fields": {
+      "first_name": "Сердар",
+      "last_name": "Джаллыев",
+      "avatar": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.student",
+    "pk": 5,
+    "fields": {
+      "first_name": "Ivan",
+      "last_name": "Ivanov",
+      "avatar": "",
+      "is_active": true
+    }
+  }
+]
