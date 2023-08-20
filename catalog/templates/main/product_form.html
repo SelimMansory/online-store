@@ -1,0 +1,20 @@
+{% extends 'catalog/base.html'%}
+{% block content %}
+
+<div class="container">
+        <div class="col-6">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <div>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                            <a href="{% url 'catalog:product' %}" class="btn btn-primary">Назад</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+                    {% endblock %}

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'catalog',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test',
+        'NAME': 'django',
         'USER': 'postgres',
         'HOST': '127.0.0.1',
         'PORT': 5432,
@@ -134,3 +135,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_HOST = 'imap.yandex.ru'
+EMAIL_HOST_USER = 'EMAIL'
+EMAIL_HOST_PASSWORD = 'EMAIL_PASSWORD'
+EMAIL_PORT = 993
+EMAIL_USE_TLS = True
