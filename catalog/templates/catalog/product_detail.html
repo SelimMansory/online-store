@@ -23,10 +23,10 @@
     </div>
 
     <!-- Button trigger modal -->
-    <div class="m-3">
-        <a href="{% url 'catalog:home' %}" class="btn btn-primary">Назад</a>
+    <div class="btn-group">
+        <a href="{% url 'catalog:delete_product' object.id %}" class="btn btn-warning">Удалить продукт</a>
+            <a href="{% url 'catalog:home' %}" class="btn btn-primary">Назад</a>
     </div>
-
 
     {% endblock %}
 </div>
