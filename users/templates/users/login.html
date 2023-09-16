@@ -3,26 +3,26 @@
 {% load crispy_forms_tags %}
 
 <div class="container" align="center">
-<div class="col-12">
-    <form method="post" class="row">
-        <div class="col-4"></div>
-        <div class="col-3">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <div>
-                        {% csrf_token %}
-                        {{ form.as_p }}
-                        <div class="btn-group">
-                            <button type="submit" class="btn btn-block btn-outline-primary">
-                                Войти
-                            </button>
-                            <a href="{% url 'catalog:home' %}" class="btn btn-block btn-outline-primary">Назад</a></div>
-                            <a href="{% url 'users:forgotten_password' %}" class="btn m-2 btn-block btn-outline-primary">Забыли пароль?</a></div>
+    <div class="col-12">
+        <form method="post" class="row">
+            <div class="col-4"></div>
+            <div class="col-3">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <div>
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-block btn-outline-dark">Войти</button>
+                                <a href="{% url 'catalog:home' %}" class="btn btn-block btn-outline-dark">Назад</a>
+                            </div>
+                            <a href="{% url 'users:forgotten_password' %}" class="btn m-2 btn-block btn-outline-dark">Забыли
+                                пароль?</a></div>
                     </div>
                 </div>
             </div>
 
-        </div>
+    </div>
     </form>
 </div>
 </div>

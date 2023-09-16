@@ -26,12 +26,10 @@ class RegisterView(CreateView):
 
 def verification(request):
     key = request.GET.get('key')
-    users = User.objects.all()
-    for user in users:
-        if key == user.mail_key:
-            user.is_active = True
-            user.save()
-            break
+    users = User.objects.filter(mail_key=key)[0]
+    if users:
+        users.is_active = True
+        users.save()
     return redirect('catalog:home')
 
 
